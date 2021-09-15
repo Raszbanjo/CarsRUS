@@ -1,0 +1,3 @@
+INSERT INTO member_table (member_id,first_name,last_name,email,street, city, zip,approved,rank) values (101,'aaa','bbb','ab@b.dk','BigStreet','Copenhagen', '2300','true','10');
+INSERT INTO member_table (member_id,first_name,last_name,email,street, city, zip,approved,rank) values (102,'bbb','ccc','ac@b.dk','BigStreet','Copenhagen', '2300','true','10');
+INSERT INTO member_table (member_id,first_name,last_name,email,street, city, zip,approved,rank) values (103,'ccc','ddd','ad@b.dk','BigStreet','Copenhagen', '2300','true','10');

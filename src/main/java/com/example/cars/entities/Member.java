@@ -16,6 +16,9 @@ public class Member {
     @Column( length =60,nullable = false)
     private String lastName;
 
+    @Column(length=120,nullable = false,unique = true)
+    private String email;
+
     @Column( length =100, nullable = false)
     private String street;
 
@@ -25,8 +28,7 @@ public class Member {
     @Column( length =100, nullable = false)
     private int zip;
 
-    @Column(length=120,nullable = false,unique = true)
-    private String email;
+
 
     @Column(length=60, nullable = false)
     private boolean approved;
