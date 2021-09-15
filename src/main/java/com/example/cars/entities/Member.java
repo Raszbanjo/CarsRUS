@@ -6,6 +6,7 @@ import java.util.Objects;
 @Entity(name ="member_table")
 public class Member {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int memberId;
@@ -35,6 +36,21 @@ public class Member {
 
     @Column(length=60, nullable = false)
     private int rank;
+
+    public Member() {
+    }
+
+    public Member(int memberId, String firstName, String lastName, String email, String street, String city, int zip, boolean approved, int rank) {
+        this.memberId = memberId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.street = street;
+        this.city = city;
+        this.zip = zip;
+        this.approved = approved;
+        this.rank = rank;
+    }
 
     public int getMemberId() {
         return memberId;
